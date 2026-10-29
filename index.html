@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>MineX Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="brand">⛏️ MineX</div>
+      <div class="tag">MINING GAME</div>
+    </header>
+
+    <section class="balance">
+      <p>YOUR BALANCE</p>
+      <h1>🪙 <span id="coins">0</span></h1>
+      <p class="muted">Mine coins. Build your progress.</p>
+    </section>
+
+    <section class="mine-area">
+      <button id="mine" aria-label="Mine for coins">
+        ⛏️
+      </button>
+      <p>Tap to mine!</p>
+      <p class="muted">Earn +1 coin per tap</p>
+    </section>
+
+    <section class="energy-card">
+      <div class="energy-label">
+        <span>⚡ ENERGY</span>
+        <span id="energyText">100 / 100</span>
+      </div>
+      <div class="energy-track">
+        <div id="energyBar"></div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat">
+        <span>🪙</span>
+        <p>Total mined</p>
+        <strong id="total">0</strong>
+      </div>
+      <div class="stat">
+        <span>🎁</span>
+        <p>Daily reward</p>
+        <button id="daily">Claim</button>
+      </div>
+    </section>
+
+    <footer>MineX • Play smart ⛏️</footer>
+  </main>
+</body>
+</html>
