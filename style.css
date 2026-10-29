@@ -1,0 +1,138 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #080b10;
+  color: #f4f7fa;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  width: 100%;
+  max-width: 480px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 24px 20px;
+  background: #10151d;
+}
+
+header, .energy-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: 800;
+  color: #a5ff5b;
+}
+
+.tag {
+  font-size: 10px;
+  color: #a5ff5b;
+  border: 1px solid #354a2d;
+  padding: 7px;
+  border-radius: 20px;
+}
+
+.balance {
+  text-align: center;
+  padding: 30px 0 12px;
+}
+
+.balance p, .muted {
+  color: #929dab;
+  font-size: 13px;
+}
+
+.balance h1 {
+  font-size: 38px;
+  margin: 10px 0;
+}
+
+.mine-area {
+  margin: 20px 0;
+  text-align: center;
+  background: #171f29;
+  border: 1px solid #293642;
+  border-radius: 24px;
+  padding: 26px 10px;
+}
+
+#mine {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #263d27;
+  border: 5px solid #a5ff5b;
+  font-size: 70px;
+  cursor: pointer;
+  box-shadow: 0 0 30px #a5ff5b20;
+  touch-action: manipulation;
+}
+
+#mine:active {
+  transform: scale(.94);
+}
+
+.energy-card, .stat {
+  background: #171f29;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.energy-label {
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.energy-track {
+  height: 10px;
+  background: #303b47;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#energyBar {
+  height: 100%;
+  width: 100%;
+  background: #a5ff5b;
+  transition: width .2s;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.stat p {
+  color: #929dab;
+  font-size: 12px;
+}
+
+.stat strong {
+  font-size: 22px;
+}
+
+#daily {
+  background: #a5ff5b;
+  color: #10151d;
+  padding: 8px 15px;
+  border: 0;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+footer {
+  color: #687482;
+  text-align: center;
+  font-size: 12px;
+  padding: 25px 0 5px;
+  }
+  
